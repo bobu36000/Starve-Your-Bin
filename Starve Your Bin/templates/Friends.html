@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+    <head>
+        <meta name= "viewport" content= "width=device-width, initial-scale=1.0">
+        <title>Inventory</title>
+        <link href="{{ url_for('static', filename='style.css') }}" type = 'text/css' rel='stylesheet'>
+    </head>
+    <body>
+        <div>
+            <fieldset>
+            <h1>Inventory</h1>
+            <h2>Freezer</h2>
+                <fieldset>
+                    <h4>Protein</h4>
+                    <button type="button">Meat</button>
+                    <button type="button">Fish</button>
+                </fieldset>
+                <fieldset>
+                    <h4>Carbonhydrates</h4>
+                    <button type="button">Pasta</button>
+                    <button type="button">Rice</button>
+                </fieldset>
+                <fieldset>
+                    <h4>Fruit + Veg</h4>
+                    <button type="button">Fruit</button>
+                    <button type="button">Vegetables</button>
+                </fieldset>
+
+            </fieldset>
+        </div>
+        <br><br>
+        <button type="button" onclick="history.back()" class="btn">Back</button>
+    </body>
+</html>

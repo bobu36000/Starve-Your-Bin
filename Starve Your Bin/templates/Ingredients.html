@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+    <head>
+        <script>
+            function popup() {
+                var x = document.getElementById("popup1");
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                }
+            }
+        </script>
+        <title> Adding ingredients </title>
+        <link href='style.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+    </head>
+    <body>
+        <h1>Adding ingredients</h1>
+        
+        <form class ="search" action=" action_page.php">
+            <h3>Search by:</h3>
+            <input type="text" placeholder="Search.." name="search">
+            <button type ="submit"><i class ="fa fa-search"></i></button> 
+        </form>
+
+        
+        <form class = "sortby" action=" action_page.php">
+            <h3>Sort by...</h3>
+            <input type="text" placeholder="Sort by.." name="sort">
+            <h4>Expiration date</h4>
+            <h4> Quantity</h4>
+        </form>
+        
+        <button onclick="popup()">Add</button>
+        <div class="popup1" id="popup1">
+
+            <br><label for="ingredient">Ingredient:</label>
+            <input type="text" name="ingredient" id="ingredient" placeholder=""><br><br>
+
+            <label for="expdate">Expiration date:</label>
+            <input type="date" name="expdate" id="expdate" placeholder="..."><br><br>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" min="0" name="quantity" id="quantity" placeholder=""><br><br>
+
+            <button onclick="popup()" class="btn">Submit</button>
+            <a href=""><button type="button" class="btn">Scan barcode</button></a>
+        </div>
+        <br>
+        <a href=""><button type="button" class="btn">Remove</button></a>
+        <br><br>
+        <a href="./Pantry.html"><button type="button" class="btn">Back</button></a>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+    <head>
+        <title> Recipe Page </title>
+        <meta name= "viewport" content= "width=device-width, initial-scale=1.0">
+        <link href="{{ url_for('static', filename='style.css') }}" type = 'text/css' rel='stylesheet'>
+
+        <div class="logo">
+            <img src="./starve your bin.png"/>
+        </div>
+    </head>
+
+    <body>
+        <h1>Recipes</h1>
+
+        <div class="last-recipe">
+            <span>Last recipe cooked: </span><br>
+            <button type="button" class="btn">Share</button></a>
+            <button type="button" class="btn">Add favourite</button></a>
+        </div>
+        <hr>
+        <div class="saved-recipes">
+            <span>Saved recipes: </span><br>
+            <button type="button" class="btn">Share</button></a>
+            <button type="button" class="btn">Add favourite</button></a>
+        </div>
+        <hr>
+        <div class="search-recipes">
+            <span>Search for recipes: </span><br>
+            <input type="search" id="search-recipe" name="search-recipe" placeholder="Search...">
+            <button>Search</button>
+        </div>
+
+        <br>
+        <a href="./Main.html"><button type="button" class="btn">Back</button></a> <br>
+
+    </body>
+</html>

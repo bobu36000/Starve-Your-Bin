@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+    <head>
+        <meta name= "viewport" content= "width=device-width, initial-scale=1.0">
+        <title>Recipe Generator</title>
+        <link href="{{ url_for('static', filename='style.css') }}" type = 'text/css' rel='stylesheet'>
+    </head>
+
+    <body>
+        <h1>Recipe Generator</h1>
+        <div class = "pantry">
+            <h2 style="text-align: center;">Freezer</h2>
+
+            <div id = "protein">
+                <h4>Protein</h4>
+                <div class = "protein-buttons">
+                    <a href="./Ingredients.html"><button type="button" class="btn">Meat</button></a>
+                    <a href="./Ingredients.html"><button type="button" class="btn">Fish</button></a>
+                </div>
+            </div>
+
+            <div id = "carbohydrates">
+                <h4>Carbohydrates</h4>
+                <div class = "carbohydrates-buttons">
+                    <a href="./Ingredients.html"><button type="button" class="btn">Pasta</button></a>
+                    <a href="./Ingredients.html"><button type="button" class="btn">Rice</button></a>
+                    
+                </div>
+            </div>
+
+            <div id = "fruitandvegetables">
+                <h4>Fruit + Veg</h4>
+                <div class = "fruitveg-buttons">
+                    <a href="./Ingredients.html"><button type="button" class="btn">Fruit</button></a>
+                    <a href="./Ingredients.html"><button type="button" class="btn">Vegetables</button></a>
+                </div>
+            </div>  
+        </div>  
+        <div class="use-ingredients">
+            <a href="./ServingSize.html"><button type="button" class="btn">Use Ingredients</button>
+        </div>
+        <br><br><br>
+        <a href="./Main.html"><button type="button" class="btn">Back</button></a> <br>
+    </body>
+</html>

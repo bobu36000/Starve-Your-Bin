@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+    <head>
+        <script>
+            function popup() {
+               var x = document.getElementById("popup");
+               if (x.style.display === "none") {
+                   x.style.display = "block";
+               } else {
+                   x.style.display = "none";
+               }
+           }
+           </script>
+
+        <meta name= "viewport" content= "width=device-width, initial-scale=1.0">
+        <title>Login</title>
+        <link href="{{ url_for('static', filename='style.css') }}" type = 'text/css' rel='stylesheet'>
+    </head>
+
+    <body>
+        <div class="login-text">
+            <h1> Login </h1>
+            <h3> Welcome back! </h3>
+            <p> Ready to make some yummy meals? </p>
+        </div>
+
+        <div class="login">
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Login details</legend>
+
+                    <label for="email">Email</label> <br>
+                    <input type="text" name="email" id="email" placeholder="Email"><br><br>
+
+                    <label for="username">Username</label> <br>
+                    <input type="text" name="username" id="username" placeholder="Username"><br><br>
+
+                    <label for="email">Password</label> <br>
+                    <input type="password" name="password" id="email" placeholder="Password"><br><br>
+
+                    <!-- Search where do submitted things go -->
+                    <input type= "submit">
+                </fieldset>
+            </form>   
+            <br>
+
+            <div class = "popup" id = "popup">
+                <span class = "popuptext" id="myPopup"> Popup text...</span>
+            </div>
+
+            
+
+           <button type="button" onclick="history.back()" class="btn">Back</button></a>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+    <head>
+        <title> Settings Page </title>
+        <meta name= "viewport" content= "width=device-width, initial-scale=1.0">
+        <link href="{{ url_for('static', filename='style.css') }}" type = 'text/css' rel='stylesheet'>
+
+        <div class="logo">
+            <img src="{{ url_for('static', filename='starve your bin.png') }}"/>
+        </div>
+    </head>
+
+    <body>
+        
+
+        <h1>Settings</h1>
+
+        <div class="settings-buttons">
+            <a href="./AccountSettings.html"><button type="button" class="btn">Account Settings</button></a>
+            <a href="./FriendsSettings.html"><button type="button" class="btn">Friends Details</button></a>
+        </div>
+        
+        <div class="delete-acc">
+            <p>Leaving so soon? :( </p>
+            <button type="button" class="btn">Delete account</button>
+        </div>
+
+        <br>
+        <button type="button" onclick="history.back()" class="btn">Back</button> <br>
+
+    </body>
+</html>

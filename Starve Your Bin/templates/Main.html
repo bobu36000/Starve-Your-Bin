@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+    <head>
+        <meta name= "viewport" content= "width=device-width, initial-scale=1.0">
+        <title>Main</title>
+        <link href="{{ url_for('static', filename='style.css') }}" type = 'text/css' rel='stylesheet'>
+    </head>
+
+    <body>
+        <h1>Menu</h1>
+        <div class="menu">
+            <div class="menu-container">
+                <a href="./Pantry.html"><button type="button" class="btn">Inventory</button></a> <br>
+            </div>
+
+            <div class="menu-container">
+                <a href="./Recipe.html"><button type="button" class="btn">Recipes</button></a> <br>
+            </div>
+
+            <div class="menu-container">
+                <a href="./Friends.html"><button type="button" class="btn">Friend's Inventory</button></a> <br>
+            </div>
+
+            <div class="menu-container">
+                <a href="./Settings.html"><button type="button" class="btn">Settings</button></a> <br>
+            </div>
+
+        </div>
+        <br>
+        <button type="button" onclick="history.back()" class="btn">Back</button> <br>
+    </body>
+</html>

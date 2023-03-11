@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+    <head>
+        <title> Account Settings </title>
+        <link href="{{ url_for('static', filename='style.css') }}" type = 'text/css' rel='stylesheet'>
+    </head>
+
+    <body>
+        <form action="submission.html" method="POST"></form>
+        <h1>Account Details</h1>
+
+        <section class="dietary-req">
+          <span>Do you have any dietary requirements? </span>
+          <br>
+          <input type="checkbox" name="dietary-req" id="vegetarian" value="vegetarian">
+          <label for="vegetarian">Vegetarian</label><br>
+          <input type="checkbox" name="dietary-req" id="vegan" value="vegan">
+          <label for="vegan">Vegan</label><br>
+          <input type="checkbox" name="dietary-req" id="gluten-free" value="gluten-free">
+          <label for="gluten-free">Gluten-free</label><br>
+          <input type="checkbox" name="dietary-req" id="dairy-free" value="dairy-free">
+          <label for="dairy-free">Lactose-free</label><br>
+          <input type="checkbox" name="dietary-req" id="kosher" value="kosher">
+          <label for="kosher">Kosher</label><br>
+        </section>
+        <hr>
+
+        <section class="allergy">
+            <span>Do you have any allergies?  </span>
+            <br>
+            <input type="checkbox" name="allergy" id="peanuts" value="peanuts">
+            <label for="peanuts">Peanuts</label><br>
+            <input type="checkbox" name="allergy" id="milk" value="milk">
+            <label for="milk">Milk</label><br>
+            <input type="checkbox" name="allergy" id="eggs" value="eggs">
+            <label for="eggs">Eggs</label><br>
+            <input type="checkbox" name="allergy" id="fish" value="fish">
+            <label for="fish">Fish</label><br>
+            <input type="checkbox" name="allergy" id="shellfish" value="shellfish">
+            <label for="shellfishr">Crustacean shellfish</label><br>
+            <input type="checkbox" name="allergy" id="tree-nuts" value="tree-nuts">
+            <label for="tree-nuts">Tree nuts</label><br>
+            <input type="checkbox" name="allergy" id="peanuts" value="peanuts">
+            <label for="peanuts">Peanuts</label><br>
+            <input type="checkbox" name="allergy" id="wheat" value="wheat">
+            <label for="wheat">Wheat</label><br>
+            <input type="checkbox" name="allergy" id="soy" value="soy">
+            <label for="soy">Soybeans</label> <br><br>
+            <span>Do you have an allergy that's not mentioned above? Write it below!</span> <br>
+            <label for="other-allergy">Other:</label>
+            <input type="text" name="allergy" id="other-allergy" > <br>
+            <span><b>Please be careful when typing your allergy!</b> It's important for us to ensure that you receive safe and personalised recommendations!  </span>
+          </section>
+          <hr>
+
+        <section class="measurement">
+            <label for="units">Choose measurement system: </label>
+            <select name="units" id="units">
+              <option value="metric">Metric</option>
+              <option value="imperial">Imperial</option>
+            </select>
+          </section>
+          <br><hr><hr><br>
+
+        
+        <section class="email-change">
+          <label for="email-change">Change registered email: </label> <br>
+          <input type="text" name="email-change" id="email-change" placeholder="Enter new email..."> 
+        </section>
+        <br>
+        <section class="username-change">
+            <label for="username-change">Change username: </label> <br>
+            <input type="text" name="username-change" id="username-change" placeholder="Enter new username..."> 
+        </section>
+        <br>
+        <section class="password-change">
+            <label for="password-change">Change username: </label> <br>
+            <input type="password" name="password-change" id="password-change" placeholder="Enter new password..."> 
+        </section>
+        <br>
+        <section class="password-check-change">
+            <label for="password2-change">Change username: </label> <br>
+            <input type="password" name="password2-change" id="password2-change" placeholder="Enter new password..."> 
+        </section>
+        <br><br>
+        <section class="submission">
+          <input type="submit" value="Submit">
+        </section>
+
+    </form>
+    <br><br>
+    <a href="./Settings.html"><button type="button" class="btn">Back</button></a> <br>
+        
+    </body>
+</html>

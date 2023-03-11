@@ -1,0 +1,23 @@
+<!doctype html>
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" type = 'text/css'>
+        <meta name= "viewport" content= "width=device-width, initial-scale=1.0">
+        <title> Starve your Bin</title>
+    </head>
+
+    <body>
+        <h1> <b> Welcome! </b> </h1>
+		<div class="welcome-logo">
+            <img src="{{ url_for('static', filename='starve your bin.png') }}">
+        </div>
+
+        <div class="welcome-buttons">
+			<p> First time user? <b> Register </b> here!</p>
+			<a href="./Register.html"><button type="button" class="btn">Register</button></a> <br><br>
+			<p> Not new? <b> Login </b> here! </p>
+			<a href="./Login.html"><button type="button" class="btn">Login</button></a>
+        </div>
+    </body>
+</html>

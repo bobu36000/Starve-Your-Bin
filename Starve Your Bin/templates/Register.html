@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+    <head>
+        <meta name= "viewport" content= "width=device-width, initial-scale=1.0">
+        <title>Register</title>
+        <link href="{{ url_for('static', filename='style.css') }}" type = 'text/css' rel='stylesheet'>
+    </head>
+    <body>
+        <div class="register-text">
+            <h1> Register <h1>
+            <h3> Hello there! </h3>
+            <p> Ready to make some yummy meals? </p>
+        </div>
+
+        <div class="register">
+            <form action="#" method = "post">
+                <fieldset>
+                    <!-- legend>Register details</legend -->
+                    <!--label for= "username">Username:</label -->
+
+                    <legend>Register details</legend>
+                    <label for="email">Email</label> <br>
+                    <input type="text" name="email" id="email" placeholder="Enter email address..."><br><br>
+
+                    <label for="username">Username</label> <br>
+                    <input type="text" name="username" id="username" placeholder="Enter username..."> <br><br>
+
+                    <label for="password">Set Password</label> <br>
+                    <input type="text" name="password" id="password" placeholder="Enter password..."> <br><br>
+
+                    <label for="email">Check Password</label> <br>
+                    <input type="text" name="check-password" id="check-password" placeholder="Enter password..."> <br><br>
+
+                    <input type= "submit">
+                </fieldset>
+            </form>
+            <br>
+            <!-- Javascript -->
+            <button onclick= "history.back()"> Back </button>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+    <head>
+        <meta name= "viewport" content= "width=device-width, initial-scale=1.0">
+        <title>Serving Size</title>
+        <link href="{{ url_for('static', filename='style.css') }}" type = 'text/css' rel='stylesheet'>
+    </head>
+
+    <body>
+        <h1>Serving Size</h1>
+        <div class="number-input">
+            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" ></button>
+            <input class="quantity" min="0" name="quantity" value="1" type="number">
+            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+        </div>
+        <br><br><br>
+        <div class="submit-size">
+            <a href="./GeneratedRecipes.html" =><input type="submit"></a>
+        </div>
+        <br><br>
+        <a href="./ChooseIngredients.html"><button type="button" class="btn">Back</button></a> <br>
+    </body>
+</html>
